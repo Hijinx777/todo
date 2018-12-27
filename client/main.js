@@ -2,6 +2,10 @@ import { Template } from 'meteor/templating';
 import { Notes } from '../lib/collections.js';
 import './main.html';
 
+Meteor.startup(function(){ $.getScript('../js/jquery.countTo.js', function(){}); });
+
+
+
 Template.body.helpers({
 
 /*
